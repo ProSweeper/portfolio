@@ -26,19 +26,36 @@
   <header id="home" class="welcome-banner">
     <div class="welcome-content">
       <h3>Hi, my name is Dylan Doucet</h3>
-      <h3>I'm a full-stack developer</h3>
+      <h3>I'm a Full-Stack Developer</h3>
       <h3>and <span id="hobby"></span></h3>
     </div>
   </header>
   <main>
-    <section id="about" class="about-container">
-
+    <div id="about"></div>
+    <section class="about-container">
+      <div>
+        <h2>Who is Dylan?</h2>
+        <img id="about-img" src="https://i.imgur.com/U2LER2X.jpg?1" alt="rotating pictures of the author">
+      </div>
+      <div class="about-content">
+        <h4>A team player ready to become a valuable asset</h4>
+        <p>
+          I enjoy learning and using technologies to improve the world in an accessible but inventive manner.
+          I have a passion for programming and the dopamine rush that comes with solving that challenging 
+          problem. With the ever evolving landscape in the technology 
+          world I am excited to keep learning and finding new problems to solve
+        </p>
+        <p>
+          I recently graduated from General Assembly's Software Engineering Immersive program and am eager
+          to apply and grow my knowledge in my first Software Engineering oportunity. 
+        </p>
+      </div>
     </section>
-    <div class="transition1"></div>
-    <section class="my-skills">   
+    <div id="skills" class="transition1"></div>
+    <section class="my-skills" >   
       <h2>My Languages, Libraries, and Frameworks</h2>
       <p>& The technologies I use to make designs a reality</p>
-      <div class="skills-container" id="skills">
+      <div class="skills-container" >
         <div class="skill">
           <i class="devicon-javascript-plain"></i>
           <p>JavaScript</p>
@@ -108,6 +125,83 @@
         exploring the D3 library and learning more about data visualiztion in Web Technologies.
       </p>
     </section>
+    <div id="work" class="transition2"></div>
+    <section  class="projects-container">
+      <h2>Some Recent Examples of Projects I Have Worked On</h2>
+      <div class="project">
+        <div class="project-info">
+          <h3>Finesse Fitness</h3>
+          <p>
+            A full-stack single page app using React in the front end and Node + Express in the backend  to allow 
+            users to view over 1300 exercises and create custom workouts from them. Exercises are stored in a noSQL 
+            mongoose database and the website is deployed on Heroku.
+          </p>
+          <div class="tech-icons"></div>
+          <div class="button-container">
+            <a class="button" href="https://finesse-fitness926.herokuapp.com/" target="_blank">
+              <span>View Demo</span>
+            </a>
+            <a class="button" href="https://github.com/ProSweeper/finesse-fitness" target="_blank">
+              <span>Visit GitHub Repo</span>
+            </a>
+          </div>
+        </div>
+        <img class="project-image" src="https://i.imgur.com/t8djIWE.png" alt="fitness app photo">
+      </div>
+      <div class="project">
+        <img class="project-image" src="https://i.imgur.com/soJLhIL.png" alt="yard barker app photo">
+        <div class="project-info">
+          <h3>Yard Barker</h3>
+          <p>
+            A full-stack Django app that connects job posters with workers to get work done around the house. 
+            Users can post a job and have it viewed by other users on the app. Jobs are location based and the 
+            google maps API is leveraged to display that data. All data is stored in a PostgreSQL database. Created with 
+            <a href="https://www.linkedin.com/in/notmaxwang/"><span>Max Wang</span></a>, 
+            <a href="https://www.linkedin.com/in/ruslan-didun/"><span>RusLan Didun</span></a>, and
+            <a href="https://www.linkedin.com/in/andrew-krauss-0063ab109/"><span>Andy Krauss</span></a>
+          </p>
+          <div class="tech-icons"></div>
+          <div class="button-container">
+            <a class="button" href="https://yardbarker.herokuapp.com/" target="_blank">
+              <span>View Demo</span>
+            </a>
+            <a class="button" href="https://github.com/akrauss419/yardbarker" target="_blank">
+              <span>Visit GitHub Repo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-info">
+          <h3>Tourney of Champs</h3>
+          <p>
+            Full-stack app that allows users to register a team and sign players up to that team. Built using 
+            EJS in the front end and an express + node.js backend. Data is stored in a mongoDB database
+          </p>
+          <div class="tech-icons"></div>
+          <div class="button-container">
+            <a class="button" href="#">
+              <span>View Demo</span>
+            </a>
+            <a class="button" href="https://github.com/ProSweeper/tourney-of-champs" target="_blank">
+              <span>Visit GitHub Repo</span>
+            </a>
+          </div>
+        </div>
+        <img class="project-image" src="https://i.imgur.com/N3N8eUL.png" alt="tourney of champs app photo">
+      </div>
+    </section>
+    <aside>
+      <a href="https://github.com/ProSweeper" target="_blank">
+        <i class="devicon-github-original"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/dylan-doucet-064398234/" target="_blank">
+        <i class="devicon-linkedin-plain"></i>
+      </a>
+      <a href="https://twitter.com/DylanDoucet" target="_blank">
+        <i class="devicon-twitter-original"></i>
+      </a>
+    </aside>
   </main>
 </body>
 </html>

@@ -12,10 +12,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // 
 const hobbies = {
   0 : 'hockey player 🏒',
-  1 : 'football watcher 🏈',
+  1 : 'football fanatic 🏈',
   2 : 'Lord of the Rings nerd 🗡',
   3 : 'Warhammer fan 🔨',
-  4 : 'hiker 🥾',
+  4 : 'enjoy hiking 🥾',
   5 : 'mediocre fisherman 🎣',
   6 : 'spicy food enjoyer 🌶',
   7 : 'uninformed film snob 🎥',
@@ -39,5 +39,24 @@ function cycleHobby() {
 }
 // initialize the hobby to cycle when the window loads
 window.addEventListener('load', function() {
-  setInterval(cycleHobby, 2000);
+  setInterval(cycleHobby, 2500);
+});
+
+const picRef = [
+  'https://i.imgur.com/U2LER2X.jpg?1',
+  'https://i.imgur.com/yb9ZbZn.jpg',
+  'https://i.imgur.com/rzTwoPH.png',
+  'https://i.imgur.com/g7IsOhS.jpg'
+];
+
+const aboutImg = document.getElementById('about-img');
+
+function changeImage() {
+  const currIdx = picRef.indexOf(aboutImg.src);
+  const nextIdx = (currIdx + 1) % picRef.length;
+  aboutImg.src = picRef[nextIdx];
+}
+
+window.addEventListener('load', function() {
+  setInterval(changeImage, 4000);
 });
